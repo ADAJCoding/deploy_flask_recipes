@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Recipe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <form action="/recipes/new" method="POST" class="col-4 p-4 bg-dark text-primary">
+        <h1>Add a New Recipe!</h1>
+        <div class="form-group">
+            <label for="name">Recipe Name:</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form">
+            <label for='under'>Under 30 Mins:</label>
+            <select name="under" class="form-contol">
+            <option value="Yes">Yes</option>
+            <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" name="description" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="instructions">Instructions:</label>
+            <input type="text" name="instructions" class="form-control">
+        </div>
+        <button  class="btn btn-primary">Create New Recipe</button>
+    </form>
+    <a href="/recipes">Home</a>
+    <a href="/logout" class="btn btn-info">Logout</a>
+</body>
+</html>
